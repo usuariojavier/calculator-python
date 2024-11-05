@@ -1,0 +1,23 @@
+
+print("MY CALCULADORA PYTHON")
+
+
+
+def calculadora(num1, num2, operacion):
+    if operacion == "+":  
+        return num1 + num2
+    elif operacion == "-":
+        return num1 - num2
+    elif operacion == "x":
+        return num1 * num2
+    elif operacion == "/":
+        return num1 / num2  
+    else:
+        return "Operacion no valida"
+
+num1 = float(input("Ingrese el primer numero: "))
+operacion = (input("Ingrese la operacion a realizar ( +, -, x, / ): "))
+num2 = float(input("Ingrese el segundo numero: "))
+
+
+print("El resultado es: ",(calculadora(num1, num2, operacion)))
